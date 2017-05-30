@@ -1,9 +1,14 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const App = () => (
+export const mapStateToProps = (b) => b;
+
+export const App = () => (
   <div>
     hello
   </div>
 )
 
-export default App
+export const randoFunc = (a) => a
+
+export default connect(mapStateToProps)(App)
