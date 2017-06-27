@@ -4,8 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack-dev-server"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/client/test/**/*test.js"
+    ],
+    "moduleDirectories": [
+      "<rootDir>/client",
+      "<rootDir>/node_modules"
+    ]
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +33,11 @@
     "redux": "^3.6.0",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "chai": "^4.0.2",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
   }
 }

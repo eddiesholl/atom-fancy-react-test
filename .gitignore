@@ -1,1 +1,4 @@
 node_modules
+client/src/components/Nested
+client/src/components/AnotherComponent
+client/test/components/ClassBased
