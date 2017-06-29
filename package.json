@@ -39,5 +39,12 @@
     "chai": "^4.0.2",
     "react-dom": "^15.6.1",
     "react-test-renderer": "^15.6.1"
+  },
+  "fancyReact": {
+    "testStructure": "SubDir",
+    "packagePath": "client",
+    "sourcePath": "src",
+    "testPath": "test",
+    "testSuffix": "-test"
   }
 }
